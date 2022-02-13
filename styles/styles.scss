@@ -1,0 +1,39 @@
+@import 'sass-utils/normalize';
+@import 'sass-utils/mixin';
+@import 'sass-utils/variables';
+@import 'sass-utils/functions';
+@import 'sass-utils/class';
+
+// component
+@import 'components/loadingSpinner';
+@import 'components/listContainer';
+
+// layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// pages
+@import 'pages/index';
+@import 'pages/commands';
+@import 'pages/rating';
+
+body {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: $black;
+  background-color: $background-color;
+}
+
+main {
+  position: relative;
+  height: calc(100vh - #{$margin-base + $header-height + $footer-height});
+
+  .page-title {
+    text-align: center;
+    width: 100%;
+    font-size: 38px;
+    text-shadow: 0 0 5px #aaa3;
+    margin-bottom: #{2 * $margin-base};
+  }
+}

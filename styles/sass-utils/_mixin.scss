@@ -1,0 +1,19 @@
+@mixin button($color, $textColor: $black) {
+  background-color: $color;
+  color: $textColor;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 14px;
+  font-weight: 500;
+  &:hover {
+    background-color: lighten($color, 10%);
+  }
+}
+
+@mixin large-screen {
+  @media (min-width: $width-breakpoint) {
+    @content;
+  }
+}

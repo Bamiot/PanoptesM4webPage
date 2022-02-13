@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: $header-height;
+  h1 {
+    img {
+      width: 125px;
+    }
+  }
+  button {
+    @include button($light-gray);
+  }
+}

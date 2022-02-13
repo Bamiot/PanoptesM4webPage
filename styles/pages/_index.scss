@@ -1,0 +1,8 @@
+main.main-index {
+  .list-container {
+    height: 30%;
+    div {
+      height: calc(99% - #{$padding-base * 4});
+    }
+  }
+}

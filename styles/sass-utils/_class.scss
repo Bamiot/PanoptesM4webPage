@@ -1,0 +1,31 @@
+.btn-black {
+  @include button($black, $white);
+}
+
+.btn-green {
+  @include button($green);
+}
+
+.btn-orange {
+  @include button($orange);
+}
+
+.btn-blue {
+  @include button($blue);
+}
+
+.btn-red {
+  @include button($red);
+}
+
+.btn-primary {
+  @include button($color-primary);
+}
+
+.btn-secondary {
+  @include button($color-secondary);
+}
+
+.hide {
+  opacity: 0;
+}

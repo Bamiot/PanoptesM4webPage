@@ -1,0 +1,12 @@
+.main-rating {
+  $btn-height: 50px;
+  .list-container {
+    height: calc(100% - #{($margin-base * 4) + $btn-height + 50px});
+  }
+  .btn-container {
+    height: $btn-height;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

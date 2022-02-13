@@ -1,0 +1,19 @@
+main.main-commands {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    button {
+      width: 100px;
+      height: 50px;
+      margin: $margin-base;
+    }
+  }
+}
