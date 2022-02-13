@@ -355,6 +355,17 @@ footer nav ul {
           justify-content: space-evenly;
 }
 
+@media (min-width: 500px) {
+  footer nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer nav ul li {
+    margin: 0 20px;
+  }
+}
+
 footer nav ul li {
   position: relative;
   background-color: #777;
@@ -422,6 +433,13 @@ main.main-commands div {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media (min-width: 500px) {
+  main.main-commands div {
+    max-width: 560px;
+    margin: 0 auto;
+  }
 }
 
 main.main-commands div button {

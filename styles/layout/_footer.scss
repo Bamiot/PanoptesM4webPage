@@ -9,6 +9,12 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    @include large-screen {
+      justify-content: center;
+      li {
+        margin: 0 $margin-base;
+      }
+    }
     li {
       position: relative;
       @include button($light-gray);
